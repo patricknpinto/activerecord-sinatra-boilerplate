@@ -4,5 +4,10 @@ require "sinatra/reloader"
 require "sinatra/activerecord"
 
 get "/" do
-  "Hello world!"
+  @restaurants = Restaurant.all
+  erb :index
+end
+
+get '/test' do
+  "this is a test"
 end

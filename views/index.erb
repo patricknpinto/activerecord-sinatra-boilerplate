@@ -1,0 +1,11 @@
+<h1>hey there!</h1>
+
+<p>This is a page made with sinatra 😃🎵</p>
+
+<p>here is a list of restaurants</p>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><%= restaurant.name %></li>
+  <% end %>
+</ul>
